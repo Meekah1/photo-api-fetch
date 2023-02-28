@@ -4,7 +4,6 @@ import {
   Flex,
   Text,
   Stack,
-  VStack,
   InputGroup,
   Input,
   InputLeftElement,
@@ -14,14 +13,22 @@ import { Search2Icon } from '@chakra-ui/icons';
 function Hero() {
   return (
     <Box w='100vw'>
-      <Box
+      <Flex
         w={'full'}
         h={'400px'}
         backgroundImage={'url(./images/bgImg.jpeg)'}
         backgroundSize={'cover'}
         backgroundPosition={'10% 80%'}
+        direction='column'
+        justifyContent='center'
+        alignItems='center'
       >
-        <VStack spacing={4} alignItems='center'>
+        <Stack
+          spacing={4}
+          direction='column'
+          justifyContent='center'
+          alignItems='center'
+        >
           <Box>
             <Text
               color='#ffffff'
@@ -45,7 +52,7 @@ function Hero() {
             </Text>
           </Box>
           <Box>
-            <Stack spacing={4}>
+            <Flex gap='4' justifyContent='center' alignItems='center'>
               <InputGroup>
                 <InputLeftElement
                   pointerEvents='none'
@@ -55,7 +62,7 @@ function Hero() {
                   variant='filled'
                   type='text'
                   w='808px'
-                  h='58px'
+                  h='56px'
                   placeholder='search images here'
                   bg='#FFFFFF'
                   borderRadius='10px'
@@ -63,10 +70,10 @@ function Hero() {
                   size='md'
                 />
               </InputGroup>
-            </Stack>
+            </Flex>
           </Box>
-        </VStack>
-      </Box>
+        </Stack>
+      </Flex>
     </Box>
   );
 }

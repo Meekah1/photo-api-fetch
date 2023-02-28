@@ -34,7 +34,7 @@ function Navbar() {
             <Stack spacing={4}>
               <InputGroup>
                 <InputLeftElement
-                  pointerEvents='none'
+                  pointerEvents='pointer'
                   children={<Search2Icon color='gray.300' />}
                 />
                 <Input

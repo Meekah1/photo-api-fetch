@@ -1,17 +1,19 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
-import './App.css'
+import Card from './Card';
+import './App.css';
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div >
-     <Navbar />
-     <Hero />
+    <div>
+      <Navbar />
+      <Hero />
+      <Card />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
