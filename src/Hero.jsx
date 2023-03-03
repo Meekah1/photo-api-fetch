@@ -14,7 +14,7 @@ function Hero() {
   return (
     <Box w='100vw'>
       <Flex
-        w={'full'}
+        w={'100%'}
         h={'400px'}
         backgroundImage={'url(./images/bgImg.jpeg)'}
         backgroundSize={'cover'}
